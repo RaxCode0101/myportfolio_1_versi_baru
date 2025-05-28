@@ -1,0 +1,1401 @@
+<!DOCTYPE HTML>
+<html lang="all">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+        theme: {
+        extend: {
+        spacing: {
+          13: '3.25rem',
+        },
+        fontFamily: {
+          inter: ['Inter'],
+          roboto: ['Roboto'],
+        },
+        colors: {
+          cornFlowerBlue: '#6495ed',
+          lightBlue: '#add8e6',
+          orangeRed: '#ff4500',
+        }
+      },
+      },
+        };
+    
+      </script>
+<title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B6886BX1S4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B6886BX1S4');
+</script>
+
+<style type="text/tailwindcss">
+
+    .dark {background: black;}
+
+    * {
+      @apply m-0 p-0;
+    }
+
+    #toggle:checked ~ label div.toggle-circle {
+      @apply translate-x-3;
+    }
+
+@keyframes awan {
+    0% {
+        /* transform: translateX(); */
+    }
+
+    10% {
+        /* transform: translateX(80px); */
+    }
+
+    20% {
+        /* transform: translateX(160px); */
+    }
+
+    30% {
+        /* transform: translateX(240px); */
+    }
+
+    40% {
+        /* transform: translateX(320px); */
+    }
+
+    50% {
+        /* transform: translateX(400px); */
+    }
+
+    60% {
+        /* transform: translateX(480px); */
+    }
+
+    70% {
+        /* transform: translateX(560px); */
+    }
+
+    80% {
+        /* transform: translateX(640px); */
+    }
+
+    90% {
+        /* transform: translateX(720px);             */
+    }
+
+    100% {
+        transform: translateX(800px);
+    }
+}
+
+@media (min-width:360px) {
+    @keyframes fade {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:0.2;
+        }
+    }
+
+    .Instagram,.Facebook,.Twitter,.Youtube {
+        z-index:5;
+    }
+
+    .teks-instagram-logo,.teks-facebook-logo,
+    .teks-twitter-logo,.teks-youtube-logo {
+        transform:scale(1.5);
+    }
+   
+    a.teks-instagram-logo:hover,a.teks-facebook-logo:hover,
+    a.teks-twitter-logo:hover,a.teks-youtube-logo:hover {
+        color:white;
+    }
+    a.teks-instagram-logo,a.teks-facebook-logo,
+    a.teks-twitter-logo,a.teks-youtube-logo {
+        color:blue;
+    }
+    .my-services img {
+        transform:translateX(-33%)scale(0.46);
+    }
+    .container-deskripsi-web-front-end img {
+        margin-left:0%;
+        padding-bottom:8%;
+    }
+    .container-deskripsi-web-front-end {
+        left:0.5%;
+    }
+    #form label {
+    font-size:12px;
+    margin-left:14%;
+    }
+    #form form {
+        position: absolute;
+    }
+    input[placeholder],textarea[placeholder] {
+        font-style: italic;
+        font-family: times new 'Times New Roman', Times, serif;
+    }
+}
+
+@media (min-width:768px) {
+    @keyframes fade {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:0.2;
+        }
+    }
+    .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
+        transform:scale(2);
+    }
+    tulisan-contacts-1, tulisan-contacts-3, 
+    tulisan-contacts-2 {
+        font-size:55px;
+    }
+
+    .my-services img {
+        transform:translateX(-24%)scale(0.8);
+    }
+    container-deskripsi-web-front-end img {
+        margin-left:0%;
+        transform:scale(1.2);
+        margin-top:4%;
+        padding-bottom:10%;
+    }
+}
+
+tulisan-contacts-1, tulisan-contacts-2,
+tulisan-contacts-3 {
+    color: #000;
+}
+
+.container-penutup-gelombangair3>div {
+    border-color: white;
+}
+
+@keyframes muncul {
+    from {
+        z-index: 0;
+    }
+
+    to {
+        z-index: 30;
+    }
+}
+
+.container-penutup-gelombangair6>div {
+    border-color: white;
+}
+
+.container-penutup-gelombangair7 {
+    left: 0;
+}
+
+.container-penutup-gelombangair4, .gelombangair2,
+.container-penutup-gelombangair5, .container-penutupgelombangair6,
+.container-penutupgelombangair7, .penutupgelombangair52,
+.penutupgelombangair65, .penutupgelombangair78,
+.penutupgelombangair91, .penutupgelombangair3-5 {
+    z-index: 14;
+}
+
+.container-penutup-gelombangair1>div,
+.container-penutup-gelombangair2>div,
+.container-penutup-gelombangair3>div,
+.container-penutup-gelombangair1,
+.container-penutup-gelombangair2 {
+    z-index: 13;
+}
+
+@keyframes geraknih {
+    from {
+        z-index: -1;
+    }
+
+    to {
+        z-index:16;
+    }
+}
+
+.tutupborderpalingkanan1, .tutupborderpalingkanan2 {
+    z-index: 30;
+}
+
+@keyframes hilang {
+    from {
+        z-index: 16;
+    }
+
+    to {
+        z-index: 0;
+    }
+}
+
+.gelombangair, .gelombangair2 {
+    background: linear-gradient(
+        rgb(181, 181, 253) 25%, 
+    rgb(116, 116, 252) 50%, rgb(67, 67, 250) 75%, 
+    blue 100%);
+}
+
+.bagianlengkungatas1, .bagianlengkungatas2,
+.bagianlengkungatas3, .bagianlengkungatas4,
+.bagianlengkungatas5, .bagianlengkungatas6,
+.bagianlengkungatas7 {
+    background: linear-gradient(rgb(181, 181, 253) 50%, transparent 0%);
+}
+
+@keyframes geraksayapkiri1 {
+    from {
+        transform: translateX(-16px) translateY(-10px) rotate(30deg);
+    }
+    to {
+        transform: translateX(-16px) translateY(-6px) rotate(0deg);
+    }
+}
+
+@keyframes geraksayapkanan1 {
+    from {
+        transform: translateX(1px) translateY(-10px) rotate(-30deg);
+    }
+    to {
+        transform: translateX(1px) translateY(-6px) rotate(0deg);
+    }
+}
+
+@keyframes burung1-2gerak {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes geraksayapkanan2 {
+    from {
+        transform: translateX(59px) translateY(-10px) rotate(-30deg)
+    }
+    to {
+        transform: translateX(59px) translateY(-6px) rotate(0deg)
+    }
+}
+
+@keyframes geraksayapkiri2 {
+    from {
+        transform: translateX(43px) translateY(-10px) rotate(30deg);
+    }
+    to {
+        transform: translateX(43px) translateY(-6px) rotate(0deg);
+    }
+}
+
+@keyframes munculkata {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes gerakkekiri {
+    from {
+        transform: translateX(900px);
+    }
+    to {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes munculkata2 {
+from {
+    opacity: 1;
+}
+to {
+    opacity: 0.6;
+}
+}
+
+.diallines {
+    position: absolute; 
+    z-index: 2; 
+    width: 2px; 
+    height: 15px;
+    background: #666;
+    left: 50%;
+    transform-origin: 50% 150px;
+}
+
+@layer components {
+  .diallines:nth-of-type(5n) {
+    @apply absolute z-20 w-1 
+    h-[25px] bg-neutral-600 
+    left-1/2 -ml-[1px];
+    transform-origin: 50% 150px;
+  }
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+position: absolute;
+left: -9999px;
+opacity: 0;
+pointer-events: none;
+}
+
+@layer components {
+  .dropdown:checked + label::before,
+  .dropdown:not(:checked) + label::before {
+    @apply fixed top-0 left-0 w-full h-full -z-10 
+    cursor-auto pointer-events-none;
+    content: '';
+  }
+}
+
+.dropdown:checked + label:before{
+pointer-events: auto;
+}
+.dropdown:not(:checked) + label .uil {
+font-size: 24px;
+margin-left: 10px;
+transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+transform: rotate(180deg);
+font-size: 24px;
+margin-left: 10px;
+transition: transform 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown{
+opacity: 1;
+pointer-events: auto;
+transform: translateY(0);
+}
+
+@layer components {
+  .section-dropdown::before {
+    @apply absolute top-[-20px] left-0 w-full h-[20px] block z-[1] content-[''];
+  }
+
+  .section-dropdown::after {
+    @apply absolute top-[-7px] left-[30px] w-0 h-0 block z-[2] content-[''] transition-all duration-200 ease-linear;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #111;
+  }
+}
+
+.section-dropdown a {
+position: relative;color: #fff;
+transition: all 200ms linear;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;font-size: 15px;
+border-radius: 2px;padding: 5px 0;
+padding-left: 20px;padding-right: 15px;
+margin: 2px 0;text-align: left;
+text-decoration: none;display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-moz-align-items: center;
+-ms-align-items: center;
+align-items: center;
+justify-content: space-between;
+-ms-flex-pack: distribute;
+}
+.section-dropdown a:hover {
+color: #102770;
+background-color: #ffeba7;
+}
+.section-dropodown a .uil {
+font-size: 22px;
+}
+
+@keyframes glowing {
+        0% {
+            border-color: red;
+            box-shadow: 0 0 30px 10px red;
+        }
+        25% {
+            border-color: blue;
+            box-shadow: 0 0 30px 10px blue;
+        }
+        50% {
+            border-color: green;
+            box-shadow: 0 0 30px 10px green;
+        }
+        75% {
+            border-color: yellow;
+            box-shadow: 0 0 30px 10px yellow;
+        }
+        100% {
+            border-color: purple;
+            box-shadow: 0 0 30px 10px purple;
+        }
+    }
+a {
+text-decoration: none;
+}
+
+.container-deskripsi-web-front-end img {
+position:relative;
+width:65%;
+left:4%
+}
+.Gambar-website-portfolio {
+position:relative;
+}
+.Gambar-website-company {
+position:relative;
+}
+.Gambar-website-wedding {
+position:relative;
+}
+hr {
+position:relative;
+width:5%;
+}
+.garis-gambar-website-portfolio {
+top:0%;
+}
+.garis-gambar-website-company {
+top:110%;
+}
+.garis-gambar-website-wedding {
+top:120%;
+}
+
+.teks-gambar-website-portfolio, .teks-gambar-website-wedding,
+.teks-gambar-website-company {
+font-size:20px;
+font-family: 'Lato', sans-serif;
+}
+
+.teks-gambar-website-portfolio {
+position:absolute;
+}
+.teks-gambar-website-company {
+position:relative;
+}
+.teks-gambar-website-wedding {
+position:relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.footer-content p {
+margin-top:-27%;
+}
+
+#form label {
+font-family:arial;
+color: black;
+}
+
+#projects {
+    background-color:#e2edff;
+}
+
+section {
+    padding-top:5rem;
+}
+</style>
+
+</head>
+<body class="overflow-x-scroll m-0 font-[Arial]">
+    <div class="container relative">
+        <div class="perlindunganmata absolute 
+        top-[-20px] bg-black z-[100]
+        opacity-20 h-[85%] w-[1300px]
+        max-sm:translate-y-[-35px]"></div>
+        <div class="container-atas bg-gradient-to-b from-[cornFlowerBlue] via-[lightBlue] 
+        to-[orangeRed] bg-no-repeat w-[1300px] h-[500px] flex items-center 
+        justify-center pr-[20px] relative max-sm:min-w-40 
+        max-sm:translate-x-[0px] max-sm:translate-y-[0px] z-[0]">
+            <canvas id="canvas" class="bg-transparent
+            absolute"></canvas>
+            <div class="sec-center relative w-[50px] h-[0]
+            text-center bg-transparent z-[200] top-[53%]
+            max-sm:ml-[-64%] md:ml-[-23%] md:top-[-2%]">
+                <input class="dropdown group-checked:relative font-[inter]
+                font-medium text-[15px] leading-[2] h-[50px] transition-all 
+                duration-200 ease-linear rounded-[4px] w-[100px] tracking-[1px] 
+                inline-flex text-center items-center justify-center border-none 
+                bg-[#ffeba7] cursor-pointer shadow-[0_12px_35px_0_rgba(255,235,167,.15)]
+                indent-[8%]" type="checkbox" id="dropdown" name="dropdown"/>
+              <label class="for-dropdown group-checked:relative font-[inter]
+              font-medium text-[15px] leading-[2] transition-all 
+              duration-200 ease-linear rounded-[4px] tracking-[1px] inline-flex 
+              text-center items-center justify-center border-none bg-[#ffeba7]
+              checked:cursor-pointer checked:shadow-[0_12px_35px_0_rgba(255,235,167,.15)]
+              checked:indent-[8%] size-[50px]" for="dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </label>
+              <div class="section-dropdown bg-[#111] absolute
+              p-[5px] top-[70px] left-0 min-w-full rounded block
+              shadow-[0_14px_35px_0_rgba(9,9,12,.4)] z-[2] opacity-0
+              pointer-events-none translate-y-[20px] transition-all
+              duration-200 ease-linear"> 
+                <a href="#about">
+                    About
+                    <i class="uil uil-arrow-right"></i>
+                </a>
+                <a href="#contacts">
+                    Contact
+                    <i class="uil uil-arrow-right"></i>
+                </a>
+                <a href="#my-services">
+                    Services
+                    <i class="uil uil-arrow-right"></i>
+                </a>
+          <a href="#form">
+            Feedback
+            <i class="uil uil-arrow-right"></i>
+        </a>
+            </div>
+        </div>
+        
+            <div class="
+            tulisanbercahaya mt-[-300px] absolute
+            z-10 text-[70px] text-[cornFlowerBlue]
+            ml-[-500px] animate-[gerakkekiri_20s_linear_infinite_running_alternate]
+            font-[lato] font-normal not-italic
+            ">
+                Welcome to my Portfolio
+            </div>
+            <div class="jam-digital-malasngoding left-[-30px]
+            overflow-visible absolute z-[17] mt-[-80px] ml-12
+            animate-[munculkata_5s_linear_1_running]
+            opacity-[0.4] max-sm:mt-[-170px] max-sm:ml-[70px]
+            md:left-[165px]">
+                <div class="kotak w-[110px] h-[100px] float-left">
+                    <p id="jam" class="text-black 
+                    text-[clamp(1rem, 1.25vw, 1.25rem)]
+                    text-center top-[40px] 
+                    absolute z-[17] left-[100px]">
+                </p>
+                </div>
+                <div class="kotak">
+                    <p id="menit" class="text-black 
+                    text-[clamp(1rem, 1.25vw, 1.25rem)]
+                    text-center top-[40px] 
+                    absolute z-[17] left-[145px]"></p>
+                </div>
+                <div class="kotak">
+                    <p id="detik" class="text-black 
+                    text-[clamp(1rem, 1.25vw, 1.25rem)]
+                    text-center top-[40px] 
+                    absolute z-[17] left-[190px]"></p>
+                </div>
+                <div class="kotak">
+                    <p id="titikduake1" class="text-black 
+                    text-[22px] top-[35px] 
+                    absolute z-[17] left-[127px]">:</p>
+                    <p id="titikduake2" class="text-black 
+                    text-[22px] top-[35px] 
+                    absolute z-[17] left-[175px]">:</p>
+                </div>
+            </div>
+        
+            <div class="matahari size-[160px] bg-[yellow] 
+            rounded-[50%] relative
+            shadow-[0_0_60px_40px_yellow,0_0_20px_10px_orange,0_0_40px_20px_orangered]
+            max-sm:min-w-40 max-sm:translate-y-[-100px]
+            max-sm:translate-x-[50px] md:min-w-[160px]
+            md:translate-x-[160px] md:translate-y-[-100px]">
+                <div class="clock bg-transparent size-[200px] mt-[-50px]
+                ml-[-20px] rounded-[50%] absolute scale-[0.55]
+                animate-[munculkata2_5s_linear_1_running]
+                opacity-[0.6] z-[17]">
+                    <div>
+                    <div class="info absolute w-[120px]
+                    h-[20px] rounded-[7px] bg-#ccc
+                    text-center leading-5
+                    text-black text-[16px]
+                    top-[80px] left-2/4
+                    ml-[-60px] font-[sans-serif]
+                    font-bold z-[17]
+                    tracking-[3px] date"></div>
+                    <div class="info absolute w-[120px]
+                    h-[20px] rounded-[7px] bg-#ccc
+                    text-center leading-5
+                    text-black text-[16px]
+                    top-[200px] left-2/4
+                    ml-[-60px] font-[sans-serif]
+                    font-bold z-[999]
+                    tracking-[3px] day"></div>
+                    </div>
+                    <div class="
+                    dot size-[14px] rounded-[50%] bg-[#ccc]
+                    top-[45%] left-0 right-0 bottom-0 m-auto
+                    absolute z-10 shadow-[0_2px_4px_-1px_black]
+                    "></div>
+                    <div>
+                    <div class="hour-hand absolute z-[5] w-[4px] h-[65px]
+                    bg-[#333] top-[79px] origin-[50%_72px]
+                    left-2/4 ml-[-2px] rounded-tl-[50%]
+                    rounded-tr-[50%]"></div>
+                    <div class="minute-hand absolute z-[6] w-[4px]
+                    h-[100px] bg-#666 top-[46px] left-2/4
+                    ml-[-2px] rounded-tl-[50%]
+                    rounded-tr-[50%] origin-[50%_105px]"></div>
+                    <div class="second-hand absolute z-[7] w-[2px] h-[120px]
+                    bg-red-600 top-[26px] left-2/4 rounded-tl-[50%]
+                    rounded-tr-[50%] origin-[50%_125px]"></div>
+                    </div>
+                    <div>
+                    <span class="h3 inline-block absolute text-#333
+                    text-[22px] font-[sans-serif] font-bold z-[4]
+                    top-[140px] right-[-20px]">3</span>
+                    <span class="h6 inline-block absolute text-#333
+                    text-[22px] font-[sans-serif] font-bold z-[4]
+                    bottom-[-72px] left-2/4">6</span>
+                    <span class="h9 inline-block absolute text-#333
+                    text-[22px] font-[sans-serif] font-bold z-[4]
+                    left-[-15px] top-[140px]">9</span>
+                    <span class="h12 inline-block text-#333
+                    text-[22px] font-[sans-serif] font-bold z-[4]
+                    top-[30px] left-[50%]
+                    ml-[-9px] absolute">12</span>
+                    </div>
+                    <div class="diallines"></div>
+                </div>
+            </div>
+            <div class="awan w-[400px] h-[60px] bg-transparent absolute
+            translate-y-[-40px] translate-x-[-680px] flex animate-[awan_160s_linear_infinite]
+            z-10 blur-[10px]">
+                <canvas id="canvas"></canvas>
+                <div class="awan-1 w-[220px] h-[60px] bg-[whitesmoke]
+                rounded-[50px]"></div>
+                <div class="awan-2 size-[60px] bg-[whitesmoke] absolute
+                rounded-[50%] translate-y-[-30px] translate-x-[25px]"></div>
+                <div class="awan-3 size-[80px] bg-[whitesmoke] rounded-[50%]
+                translate-y-[-50px] translate-x-[-155px]"></div>
+                <div class="awan-4 size-[60px] bg-[whitesmoke] rounded-[50%]
+                translate-y-[-30px] translate-x-[-180px]"></div>
+            </div>
+        
+            <div class="awandua translate-x-[-880px] translate-y-[6px]
+            animate-[awan_160s_linear_infinite] blur-[10px]">
+                <div class="awan-1 w-[220px] h-[60px] bg-[whitesmoke] rounded-[50px]
+                translate-y-[42px] translate-x-[-1000px]"></div>
+                <div class="awan-2 size-[60px] bg-[whitesmoke] absolute
+                rounded-[50%] translate-y-[-46px] translate-x-[-978px]"></div>
+                <div class="awan-3 size-[80px] bg-[whitesmoke] rounded-[50%]
+                translate-y-[-65px] translate-x-[-940px]"></div>
+                <div class="awan-4 size-[60px] bg-[whitesmoke] rounded-[50%]
+                translate-y-[-124px] translate-x-[-880px]"></div>
+            </div>
+        
+            <div class="burung absolute translate-y-[-30px] z-30">
+                <div class="burung1 absolute bg-black
+                animate-[burung1-2gerak_120s_linear_infinite_running]
+                ml-[-1000px]">
+                    <div class="sayapkanan1 bg-black absolute
+                    w-[30px] h-[6px] translate-x-[-1px]
+                    translate-y-[-8px] rotate-[-30deg]
+                    animate-[geraksayapkanan1_0.7s_ease_infinite_both_running]"></div>
+                    <div class="sayapkiri1 bg-black absolute
+                    w-[30px] h-[6px] translate-x-[-16px]
+                    translate-y-[-8px] rotate-[30deg]
+                    animate-[geraksayapkiri1_0.7s_ease_infinite_both_running]"></div>
+                    <div class="kaki1 w-[15px] h-[5px]"></div>
+                </div>
+                <div class="burung2 absolute bg-black
+                translate-x-[40px]
+                animate-[burung1-2gerak_120s_linear_infinite_running]
+                ml-[-1000px]">
+                    <div class="sayapkanan2 bg-black absolute
+                    w-[30px] h-[6px] translate-x-[59px]
+                    translate-y-[-10px]
+                    animate-[geraksayapkanan2_0.7s_ease_infinite_both_running]"></div>
+                    <div class="sayapkiri2 bg-black absolute
+                    w-[30px] h-[6px] translate-x-[44px]
+                    translate-y-[-8px] rotate-[30deg]
+                    animate-[geraksayapkiri2_0.7s_ease_infinite_both_running]"></div>
+                    <div class="kaki2 w-[15px] h-[5px]
+                    absolute bg-black translate-x-[59px]"></div>
+                </div>
+                <div class="burung3">
+                    <div class="sayapkanan3"></div>
+                    <div class="sayapkiri3"></div>
+                    <div class="kaki3"></div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container-bawah w-full 
+    h-[150px] p-[10px] relative 
+    max-sm:translate-y-[-210px] translate-x-[-8px]">
+
+        <div class="container-ombak-air1 relative 
+        w-full bg-transparent border-[10px] 
+        border-solid border-transparent ml-[-12px]
+        z-[13]">
+
+            <div class="gelombangair w-[1366px] h-[100px]
+            relative max-sm:mt-[90px] z-[13]"></div>
+            <div class="bagianlengkungatas1 w-[180px] h-[100px]
+            absolute
+            top-[50px] left-[-7px] z-[13] rounded-t-[100%]"></div>
+            <div class="bagianlengkungatas2 w-[180px] h-[100px]
+            absolute
+            top-[50px] left-[381px] z-[13] rounded-t-[100%]"></div>
+            <div class="bagianlengkungatas3 w-[180px] h-[100px]
+            absolute
+            top-[50px] left-[769px] z-[13] rounded-t-[100%]"></div>
+            <div class="bagianlengkungatas4 w-[180px] h-[100px]
+            absolute
+            top-[50px] left-[1158px] z-[13] rounded-t-[100%]"></div>
+
+            <div class="container-penutup-gelombangair1 top-0
+            ml-[50px]">
+                <div class="penutupgelombangair13 w-[212px] 
+                h-[100px] z-[5] absolute top-[34px] 
+                left-[171px] rounded-b-[100%] rotate-0 
+                bg-gradient-to-b from-[transparent] 
+                to-[orangered] border-[rgb(119, 94, 94)]"></div>
+            </div>
+
+            <div class="container-penutup-gelombangair2
+            left-[386px] top-[-195px]">
+                <div class="penutupgelombangair26 w-[212px]
+                h-[100px] z-[5] absolute top-[34px]
+                left-[559px] rounded-b-[100%] border-white
+                rotate-0 bg-gradient-to-b from-[transparent]
+                to-[orangered]"></div>
+            </div>
+
+            <div class="tutupbagianlengkungatas1
+            w-[10px] h-[100px] bg-white absolute top-[30px]
+            left-[10px] z-[13]"></div>
+
+            <div class="container-penutup-gelombangair3
+            relative left-[771px] top-[-195px] z-[13]">
+                <div class="penutupgelombangair39 w-[212px]
+                h-[100px] z-[5] absolute top-[40px] 
+                left-[176px] rounded-b-[100%] 
+                rotate-0 bg-gradient-to-b from-[transparent]
+                to-[orangered]"></div>
+            </div>
+            <div class="container-penutup-gelombangair3-5
+            top-[-30px] left-[300px]">
+                <div class="penutupgelombangair3-5
+                w-[212px] h-[100px] z-[13] absolute
+                rounded-b-[100%] top-[34px] left-[1336px]
+                animate-[hilang_0.9s_ease-in_infinite_running]
+                bg-gradient-to-b from-[transparent] 
+                to-[orangered]"></div>
+            </div>
+
+            <div class="tutupborderpalingkanan1 w-[210px] h-[70px]
+            bg-[rgb(181, 181, 253)] left-[1341px] absolute z-30
+            top-[26px] rounded-tl-[100%] animate-[muncul_0.9s_ease_infinite_running]"></div>
+        </div>
+
+        <div class="container-ombak-air2 relative 
+        border border-solid border-transparent 
+        w-full mt-[-210px] ml-[-10px] bg-transparent
+        animate-[geraknih_0.9s_ease_infinite_running]
+        z-[14]">
+
+            <div class="gelombangair2 w-[1366px] h-[100px] 
+            relative max-sm:mt-[96px] z-[13]"></div>
+            <div class="bagianlengkungatas5 w-[190px] h-[100px]
+            absolute
+            left-[180px] top-[60px] rounded-t-[100%]
+            animate-[geraknih_0.9s_ease_infinite_running]
+            z-[14]"></div>
+            <div class="bagianlengkungatas6 w-[191px] h-[100px]
+            absolute
+            left-[568px] top-[60px] rounded-t-[100%]
+            animate-[geraknih_0.9s_ease_infinite_running]
+            z-[14]"></div>
+            <div class="bagianlengkungatas7 w-[192px] h-[100px]
+            to-[transparent]
+            absolute left-[955px] top-[60px]
+            rounded-t-[100%] 
+            animate-[geraknih_0.9s_ease_infinite_running]
+            z-[14]"></div>
+            <div class="container-penutup-gelombangair4
+            relative">
+                <div class="penutupgelombangair52 w-[212px]
+                h-[100px] z-[12] absolute top-[-153px] 
+                left-[-26px] rounded-b-[100%] 
+                rotate-0 bg-gradient-to-b from-[transparent]
+                to-[orangered] "></div>
+            </div>
+            <div class="container-penutup-gelombangair5
+            left-[386px] top-[-195px]">
+                <div class="penutupgelombangair65 w-[214px] 
+                h-[100px] z-[12] absolute top-[43px]
+                left-[362px] rounded-b-[100%] 
+                rotate-0 bg-gradient-to-b from-[transparent]
+                to-[orangered]"></div>
+            </div>
+            <div class="container-penutup-gelombangair6
+            left-[771px] top-[-195px]">
+                <div class="penutupgelombangair78 w-[212px]
+                h-[100px] z-[12] absolute top-[43px] left-[751px] 
+                rounded-b-[100%] rotate-0 bg-gradient-to-b
+                from-[transparent] to-[orangered]"></div>
+            </div>
+            <div class="container-penutup-gelombangair7">
+                <div class="penutupgelombangair91 w-[212px] 
+                h-[100px] z-[12] absolute top-[43px]
+                left-[1139px] rounded-b-[100%] bg-gradient-to-b
+                from-[transparent] to-[orangered]"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-isi absolute 
+    max-sm:mt-[50%] ml-0 z-[1] border-[5px] 
+    border-transparent md:scale-[0.8] md:left-0
+    md:top-[40%]">
+
+<!-- dark mode -->
+<div class="flex justify-center max-sm:mt-[-300px]
+max-sm:ml-[20px]">
+    <span class="text-sm text-slate-500
+    mr-2">Light</span>
+    <input type="checkbox" id="toggle"
+    class="hidden" />
+    <label for="toggle">
+      <div class="w-9 h-5 bg-slate-500
+      rounded-[100%] flex items-center p-1
+      cursor-pointer">
+        <div class="w-4 h-4 bg-white
+        rounded-[100%] toggle-circle"></div>
+    </div>
+    </label>
+    <span class="text-sm text-slate-500
+    ml-2">Dark</span>
+  </div>
+<!--  -->
+
+        <span class="foto-style-text 
+        max-sm:absolute max-sm:mt-[36%] 
+        max-sm:ml-[22%] max-sm:text-[20px]
+        animate-[fade_4s_linear_alternate_infinite]
+        md:text-[40px] md:mt-[-38%] md:ml-[3%]">
+            Please Scroll</span>
+
+        <!-- Awal section profil -->
+        <section id="profil" class="jumbotron text-center
+        relative mt-[1%] bg-whitesmoke pt-[6em]
+        bg-[#e2edff] max-sm:w-[360px] max-sm:h-[600px]
+        max-sm:ml-[26%] max-sm:translate-x-[-40%]
+        max-sm:translate-y-[60%] md:translate-y-[-130%]
+        md:pb-[8%] md:pt-[1%]">
+        <div class='foto relative rounded-full 
+        bg-cover bg-no-repeat shadow-[0_0_30px_white] 
+        animate-[glowing_2s_linear_infinite] 
+        max-sm:w-[200px] max-sm:h-[200px] 
+        max-sm:ml-[24%] mt-0 bg-[url("bryan.jpg")]
+        md:scale-[0.9] md:left-[-40%]'>
+    </div> 
+        <h1 class='foto-h1 absolute 
+        max-sm:text-[20px] w-[100%]
+        max-sm:mt-[12%]'>
+        Hello, I'm <span class="spasi">Bryan</span>
+    </h1>
+        <h2 class='foto-h2 absolute 
+        max-sm:text-[15px] max-sm:mt-[26%]
+        max-sm:ml-[8%]'>
+            Portofolio | Bryan Phillip | Front End Developer
+        </h2>
+        </section>
+        <!-- Akhir section profil -->
+
+    <div class="about-style-text max-sm:translate-y-[500px] 
+    max-sm:ml-[28%] max-sm:text-[20px] md:text-[40px]
+    animate-[fade_4s_linear_alternate_infinite]
+    md:mt-[-13%] md:ml-[3%]">
+        Enjoy <br>my<br>website</div>
+        <div class="isi relative mt-[40%] max-sm:top-0">
+
+        <!-- Awal section about -->
+        <section id="about" class="jumbotron text-center
+        max-sm:ml-[-2%] md:mt-[-34%] md:ml-[-16%] md:w-[48%]
+        max-sm:translate-y-[450px] bg-[#e2edff]">
+            <h3 class='about-h3 max-sm:text-[18px] 
+            max-sm:ml-[-26%] md:ml-[21%] md:pb-[2%]'>
+                About Me</h3>
+
+            <p class="about-p1 max-sm:w-[56%] 
+            indent-[8%] text-justify py-[30px] 
+            max-sm:mt-[0] max-sm:ml-[7%]
+            max-sm:leading-[50px] max-sm:first-letter:ml-[6%]
+            leading-[2.5] text-black md:mt-[0]
+            md:leading-[50px] md:ml-0">
+                My name is Bryan Phillip, I work as a Front-End Developer living in Indonesia (dear country).
+                By the way, I have never worked for any company. I learned programming languages ​​such as HTML, CSS and Javascript
+                via youtube and browser for several years. I also work as a Freelancer in the field of Front-End Development.
+            </p>
+            
+            <p class="about-p2 max-sm:w-[56%]
+            indent-[8%] text-justify py-[30px] max-sm:mt-[10%] 
+            max-sm:first-letter:ml-[6%] max-sm:leading-[50px] 
+            leading-[2.5] text-black md:mt-[-17%] 
+            md:leading-[50px] md:ml-0 max-sm:ml-[7%]">
+                Why do I like the field of Front-End Development? Because that part or field is only what I am capable of in Programmer. In short
+                I can only make a display or style (UI / User Interface). I can't make or design in terms of the system or
+                The Back-End Development is because my understanding has not been able to digest it. this is what made me change my goals from
+                wanted to be a Programmer changed to wanted to be a Front-End Developer.
+            </p>
+        </section>
+        <!-- Akhir section about -->
+
+        <span class="contacts-style-text inline-block
+        max-sm:mt-[600px] max-sm:ml-[15%]
+        md:mt-[3%] md:ml-[-2%] max-sm:text-[20px]
+        animate-[fade_4s_linear_alternate_infinite]
+        md:text-[40px]">
+        Now, here's my Contacts</span>
+
+        <!-- Awal section contacts -->
+        <section id="contacts" class="jumbotron text-center
+        relative bg-[#e2edff] max-sm:ml-[-1%]
+        max-sm:mt-[20%] md:ml-[-14%]"
+        >
+        
+            <tulisan-contacts-1 class="max-sm:absolute max-sm:text-[18px]
+            max-sm:left-[40%] max-sm:top-[18%] md:left-[39%] md:top-[13%]">
+            They are
+                <br>my Social<br>Media Info
+            </tulisan-contacts-1>
+            <tulisan-contacts-2 class="max-sm:absolute max-sm:text-[18px] 
+            max-sm:left-[40%] top-[43%] md:left-[39%] md:top-[66%]">
+                Use them<br>to contact<br>me Ok!
+            </tulisan-contacts-2>
+            <tulisan-contacts-3 class="max-sm:absolute max-sm:text-[18px] 
+            max-sm:left-[40%] top-[68%] md:left-[39%] md:top-[39%] z-[9]">
+                Glad to<br>hear from<br>you Guys
+            </tulisan-contacts-3>
+            <h3 class='contacts-h3 max-sm:translate-y-[50px]
+            text-[40px] relative md:scale-[0.75] md:translate-y-[810px]
+            md:ml-[-26%]'><br><contacts class="max-sm:text-[50px]
+            max-sm:ml-[-75%] md:text-[100px] md:ml-[5%]">C<br><o class="max-sm:ml-[-75%]">o</o>
+                <br><n class="max-sm:ml-[-75%]">n</n><br><t class="max-sm:ml-[-75%]">t</t>
+                <br><a class="max-sm:ml-[-75%]">a</a><br><c class="max-sm:ml-[-75%]">c</c>
+                <br><t class="max-sm:ml-[-75%]">t</t><br><s class="max-sm:ml-[-75%]">s</s>
+            </contacts></h3>
+            <a href="https://www.instagram.com/raxcode0101/" target="blank">
+                <img class='Instagram relative 
+                max-sm:size-[10%] md:top-[-900px] md:left-[-6.5%] 
+                md:pb-[5%] md:size-[45%] max-sm:left-[25%]'
+                src="Instagram.png" alt="Logo instagram">
+            </a>
+                <a href='https://www.facebook.com/profile.php?id=100089730193646' 
+                target='blank'>
+                <img class='Facebook relative
+                max-sm:size-[10%] md:ml-[-6%] md:top-[-500px]
+                md:size-[84%] max-sm:left-[25%]' 
+                src='Facebook.png' alt="Logo facebook">
+            </a>
+                <a href='https://twitter.com/RCod17597091' 
+                target='blank'>
+                <img class='Twitter relative max-sm:left-[25%] 
+                max-sm:size-[12%] md:top-[-740px] 
+                md:left-[1.5%] md:size-[22%]' src='Twitter.png' alt="Logo twitter">
+            </a>
+                <a href='https://www.youtube.com/channel/UCILrabuFIEG7gsZSp0Sf78A' 
+                target='blank'>
+                <img class='Youtube relative max-sm:left-[20%] 
+                md:top-[380px] md:left-[-10%]
+                max-sm:size-[22%]' src='Youtube.png' alt="Logo youtube">
+            </a>
+        </section>
+        <!-- Akhir section contacts -->
+
+        <span class="my-services-style-text absolute max-sm:mt-[25%]
+        max-sm:ml-[25%] text-black md:text-[40px] 
+        animate-[fade_4s_linear_alternate_infinite] max-sm:text-[20px] 
+        md:mt-[-5%] md:ml-[1%]">Next, my services</span>
+
+        <!-- Awal section services -->
+        <section id="my-services" class="bg-[whitesmoke] md:ml-[-15%] 
+        max-sm:ml-[-5%] max-sm:mt-[55%] max-sm:relative">
+            <br>
+            <h3 class='my-services-h3 max-sm:ml-[24%] max-sm:text-[1.2rem]
+            md:scale-[0.5] md:ml-[-31%]'>
+                My Services/Projects</h3>
+            <img class='gambar-my-services relative
+            left-[3%] mt-[-1%] scale-[0.6]
+            max-sm:ml-[-5%] max-sm:mt-[-30%]
+            max-sm:w-[46%] md:ml-[-14%] md:mt-[-30%]
+            md:w-[86%]'
+            src='Web Development.jpg' 
+            alt="gambar web development">
+            <span class='teks-gambar-services-1 relative top-[-7%]
+            max-sm:translate-y-[-18%] max-sm:scale-[0.52] max-sm:ml-[29%]
+            md:ml-[22%] md:translate-y-[-80px] md:scale-[0.75]'>
+            Web Front-End Development</span>
+            <div class="container-deskripsi-web-front-end
+            relative ml-[6.5%] md:left-[7.5%] md:w-full">
+            <p class='my-services-p1 relative 
+            text-[20px] text-justify indent-[6%] 
+            pr-[2%] pl-[2%] leading-[2.5] md:w-[54%]
+            md:left-[-7%] md:top-[-60px] md:scale-[0.85]
+            max-sm:w-[36%] max-sm:left-[-5%]'>
+                The first project is web Front-End Development. 
+                This Front-End-based web uses HTML, 
+                CSS, and Javascript programming 
+                languages. HTML as website 
+                framework, CSS as website 
+                appearance/style, and Javascript 
+                as action or UX (User Experience).
+                Example:
+            </p>
+            <br><br><br><br>
+            <hr class='hr garis-gambar-website-portfolio bg-red-500
+            mt-[-3%] ml-[13%] max-sm:mt-[-7%] max-sm:ml-[12%]'>
+            <span class='teks-gambar-website-portfolio
+            md:ml-[14%] md:top-[120px] max-sm:top-[200px]
+            max-sm:ml-[7%] md:scale-[1.2]'
+            >
+            Website Portfolio
+        </span>
+            <img class="Gambar-website-portfolio-home md:mt-[-3%]" 
+            src="img/home_portfolio_2.png" 
+            alt="Gambar-website-portfolio-home">
+            <br><br><br><br>
+            <img class='Gambar-website-portfolio-about md:mt-[-16%]' 
+            src='img/about_portfolio_2.png' 
+            alt='Gambar-website-portfolio-about'>
+            <br><br><br><br>
+            <img class='Gambar-website-portfolio-contact md:mt-[-17%]' 
+            src='img/contact_portfolio_2.png' 
+            alt='Gambar-website-portfolio-contact'>
+            <br><br><br><br>
+            <img class="Gambar-website-portfolio-services md:mt-[-16%]" 
+            src="img/projects_portfolio_2.png" 
+            alt="Gambar-website-portfolio-service1">
+		<br><br><br><br>
+            <span class='teks-gambar-website-company md:top-[-115px]
+            md:left-[6%] max-sm:top-[-130px] max-sm:ml-[7%]
+            md:scale-[1.2]'>
+                Website Company
+            </span>
+            <hr class='hr garis-gambar-website-company md:mt-[-7%]
+            md:ml-[12%] max-sm:mt-[-15%] max-sm:ml-[12%]' 
+            style='background:red;'>
+            <img class='Gambar-website-company-home max-sm:mt-[-8%]
+            md:mt-[-2%]' 
+            src='home-website-company.png' 
+            alt='Gambar-website-company-home'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-tentang
+            md:mt-[-15%]' 
+            src='tentang-kami-website-company.png' alt='Gambar-website-company-tentang'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-menu md:mt-[-17%]' 
+            src='menu-kami-website-company.png' alt='Gambar-website-company-menu'>
+            <br><br><br><br>
+            <img class="Gambar-website-company-produk md:mt-[-19.5%]" 
+            src="produk-kami-website-company.png" 
+            alt="Gambar-website-company-produk">
+            <br><br><br><br>
+            <img class='Gambar-website-company-k-f md:mt-[-19%]' 
+            src='kontak,footer-website-company.png' alt='Gambar-website-company-produk,kontak,footer'>
+            <br><br><br><br>
+            <span class='teks-gambar-website-wedding md:ml-[14%]
+            md:top-[-110px] max-sm:top-[-130px] max-sm:ml-[7%]
+            md:scale-[1.2]'>
+                Website Wedding</span>
+            <hr class='hr garis-gambar-website-wedding md:mt-[-6.5%]
+            md:ml-[13%] bg-red-500 max-sm:mt-[-15%]
+            max-sm:ml-[12%]'>
+            <img class='Gambar-website-wedding-home md:mt-[-3%]' 
+            src='home_website_pernikahan.png' alt='Gambar-website-wedding-home'>
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-mempelai md:mt-[-15.5%]' 
+            src="mempelai_website_pernikahan.png" 
+            alt='Gambar-website-wedding-mempelai'>
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-undangan md:mt-[-15.5%]' 
+            src="undangan_website_pernikahan.png" 
+            alt='Gambar-website-wedding-undangan'>
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-doa-dan-ucapan md:mt-[-15.5%]' 
+            src="doa_dan_ucapan_website_pernikahan.png" 
+            alt='Gambar-website-wedding-doa&ucapan'>
+            <br><br><br><br>
+        </div>
+    </section>
+    <!-- Akhir section services -->
+
+        <span class="form-style-text absolute 
+        max-sm:mt-[8%] max-sm:ml-0 max-sm:rotate-45
+        max-sm:text-[20px]
+        animate-[fade_4s_linear_alternate_infinite]
+        md:text-[40px] md:mt-[8%] md:ml-[-7%]
+        md:rotate-0">
+        Don't forget to fill in the form below</span>
+        <br><br><br>
+
+        <!-- Awal section form -->
+        <section id="form" 
+        class="bg-[whitesmoke]
+        translate-y-[10px] max-sm:absolute
+        max-sm:mt-[15%] max-sm:translate-x-[20px]
+        max-sm:w-[16%] max-sm:h-[8%] 
+        max-sm:left-[-6px] md:absolute md:mt-[15%]
+        md:left-[-13%] md:w-[42%] md:h-[5%] md:pt-[2%]">
+            <span class='judulform ml-[1%] text-black
+            text-[20px] md:left-[-12%] md:mt-[14%] md:scale-[1]
+            max-sm:left-[-1%] max-sm:mt-[14%] max-sm:scale-[0.65]'>
+            Fill The Form</span>
+            <form name='submit-to-google-sheet' action="komentar-MyPortfolio.php" method="post">
+                <br>
+                <label for="name">&nbsp;Name:</label>
+                <input placeholder="Type your name" 
+                type='name' id="name" name="nama"
+                class="max-sm:translate-x-[120px] max-sm:translate-y-[-25px]
+                max-sm:mb-[20px] max-sm:w-[180px] max-sm:text-[11px]
+                md:w-[400px] md:translate-x-[300px] md:translate-y-[-28px]"
+                required>
+                <label for="email">&nbsp;Email:</label>
+                <input placeholder="Type your email" 
+                type="email" id="email" name="email"
+                class="max-sm:translate-x-[120px] max-sm:translate-y-[-25px]
+                max-sm:mb-[20px] max-sm:w-[180px] max-sm:text-[11px]
+                md:w-[400px] md:translate-x-[300px] md:translate-y-[-28px]"
+                required>
+                <label for="comment">&nbsp;Comment:</label>
+                <textarea placeholder='Wanna comment?' 
+                id="comment" name="pesan" class="max-sm:translate-x-[121px]
+                max-sm:translate-y-[-25px] max-sm:w-[180px] max-sm:text-[13px]
+                md:w-[700px]" 
+                required></textarea>
+                <button style='margin-left:10%;' 
+                type="submit" class="bg-white cursor-pointer
+                max-sm:w-[100px] max-sm:h-[50px] max-sm:border-none
+                max-sm:rounded-[20px] max-sm:text-black max-sm:tracking-[1px]
+                max-sm:text-[10px] max-sm:font-bold max-sm:translate-x-[120px]"
+                >Kirim</button>
+                
+            </form>      
+        </section>
+        <!-- Akhir section form -->
+ 
+    </div>
+</div>
+<div class="whatsapp-container fixed 
+bottom-[20px] right-[20px] z-[999]">
+    <a href="https://api.whatsapp.com/send?phone=081388612550" 
+    target="_blank" 
+    class="whatsapp-link flex 
+    justify-center items-center 
+    size-[60px] bg-green-500 rounded-[50%] 
+    shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+      <img src="Logo whatsapp.svg" alt="WhatsApp Logo"
+      class="size-10">
+    </a>
+  </div>  
+
+    <script type='text/javascript'>
+    window.setTimeout("waktu()", 1000);
+
+function waktu() {
+    var waktu = new Date();
+    setTimeout("waktu()", 1000);
+    document.getElementById("jam").innerHTML = waktu.getHours();
+    document.getElementById("menit").innerHTML = waktu.getMinutes();
+    document.getElementById("detik").innerHTML = waktu.getSeconds();
+}
+var dialLines = document.getElementsByClassName('diallines');
+var clockEl = document.getElementsByClassName('clock')[0];
+
+for (var i = 1; i < 60; i++) {
+clockEl.innerHTML += "<div class='diallines'></div>";
+dialLines[i].style.transform = "rotate(" + 6 * i + "deg)";
+}
+
+function clock() {
+var weekday = [
+"Sunday",
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday",
+"Saturday"
+],
+d = new Date(),
+h = d.getHours(),
+m = d.getMinutes(),
+s = d.getSeconds(),
+date = d.getDate(),
+month = d.getMonth() + 1,
+year = d.getFullYear(),      
+hDeg = h * 30 + m * (360/720),
+mDeg = m * 6 + s * (360/3600),
+sDeg = s * 6, 
+hEl = document.querySelector('.hour-hand'),
+mEl = document.querySelector('.minute-hand'),
+sEl = document.querySelector('.second-hand'),
+dateEl = document.querySelector('.date'),
+dayEl = document.querySelector('.day');
+
+var day = weekday[d.getDay()];
+
+if(month < 9) {
+month = "0" + month;
+}
+
+hEl.style.transform = "rotate("+hDeg+"deg)";
+mEl.style.transform = "rotate("+mDeg+"deg)";
+sEl.style.transform = "rotate("+sDeg+"deg)";
+dateEl.innerHTML = date+"/"+month+"/"+year;
+dayEl.innerHTML = day;
+}
+
+setInterval("clock()", 100);
+// Inisialisasi variabel
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var w = window.innerWidth;
+var h = window.innerHeight;
+canvas.width = w;
+canvas.height = h;
+
+var arr = [];
+var maxDrops = 1000;
+
+// Fungsi untuk membuat objek tetesan hujan
+function RainDrop() {
+this.x = Math.random() * w;
+this.y = -5;
+this.vy = Math.random() * 10 + 5;
+this.l = Math.random() * 10 + 5;
+this.w = 2;
+}
+
+// Fungsi untuk menggambar tetesan hujan
+RainDrop.prototype.draw = function () {
+ctx.strokeStyle = "#00BFFF";
+ctx.beginPath();
+ctx.moveTo(this.x, this.y);
+ctx.lineTo(this.x + this.w, this.y + this.l);
+ctx.stroke();
+};
+
+// Fungsi untuk memperbarui posisi tetesan hujan
+RainDrop.prototype.update = function () {
+this.y += this.vy;
+if (this.y > h) {
+this.y = -5;
+this.x = Math.random() * w;
+}
+};
+
+// Fungsi untuk memulai animasi hujan
+function init() {
+for (var i = 0; i < maxDrops; i++) {
+arr.push(new RainDrop());
+}
+animate();
+}
+
+// Fungsi untuk melakukan animasi hujan
+function animate() {
+ctx.clearRect(0, 0, w, h);
+for (var i in arr) {
+arr[i].draw();
+arr[i].update();
+}
+requestAnimationFrame(animate);
+}
+
+// Memulai animasi
+init();
+
+    </script>
+    <footer class="footer bg-[whitesmoke]
+    text-black px-0 py-[70px] pb-[30px]
+    absolute right-0 left-0
+    translate-y-[7900px] md:top-[5700px] md:z-[99]
+    max-sm:top-[3000px]">
+        <div class="footer-content 
+        max-w-[1200px] mx-auto flex 
+        justify-between items-center">
+          <p class="md:ml-[39%] md:translate-y-[85px]">
+            Copyright © 2023 - All Rights Reserved.
+        </p>
+          <span class='text-footer opacity-[0.7]
+          text-black shadow-[0_0_10px_white] md:text-[13px]
+          md:mt-[1%] md:ml-[44%]'>
+          Bryan Phillip Sumarauw
+        </span>
+        </div>
+        <span class="footer-style-text 
+        max-sm:absolute max-sm:mt-[-34%]
+        max-sm:text-[20px] md:text-[40px]
+        md:absolute md:mt-[-18%] ml-[4%]">See You..</span>
+      </footer>
+    </div>
+
+    <script>
+const checkbox = document.querySelector
+    ('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function() {
+      checkbox.checked ? html.classList.add
+      ('dark') : html.classList.remove
+      ('dark');
+    })
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbweVTktakONuCh49Fn2OKb27tXp44lGpTW4tU1V0tsnvaYl65ed3xJDz7OnHgGpPnur/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                form.reset();
+                console.log('Success!', response);
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
